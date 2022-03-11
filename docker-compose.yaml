@@ -1,0 +1,13 @@
+version: "3.19"
+
+services:
+  app:
+    build: 
+      context: ./app
+    container_name: app
+    image: challenge-node-app
+    volumes:
+      - ./app:/usr/src/app
+    tty: true
+    ports:
+      - 3000:3000

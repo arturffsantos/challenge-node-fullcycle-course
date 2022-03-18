@@ -10,9 +10,16 @@ Desafio do curso **Full Cycle** da **Code Education** que consiste em criar um d
 
 Aplicação nodejs que lista os nomes cadastrados no banco de dados.
 
+| Endpoints disponíveis | método |                                |
+| --------------------- | ------ | ------------------------------ |
+| localhost:8080        | GET    | lista nomes                    |
+| localhost:8080/{name} | POST   | insere o name na tabela people |
+
+A tabela já vem preenchida com alguns nomes.
+
 ## Banco de dados
 
-Banco mysql com script para criação da tabela **people** no database **challenge**.
+Banco mysql com scripts para criação da tabela **people** e inserção inicial de nomes no database **challenge**.
 
 O docker-compose cria dois bind mounts:
 |||
@@ -22,7 +29,7 @@ O docker-compose cria dois bind mounts:
 
 ## nginx
 
-Proxy reverso, escutando as portas 80 e 8080. O arquivo nginx.conf contém as configurações do nginx usadas ao fazer o build
+Proxy reverso, escutando a porta 8080. O arquivo nginx.conf contém as configurações do nginx usadas ao fazer o build
 
 ## Uso
 

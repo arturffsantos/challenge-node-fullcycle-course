@@ -29,7 +29,7 @@ O docker-compose cria dois bind mounts:
 
 ## nginx
 
-Proxy reverso, escutando a porta 8080. O arquivo nginx.conf contém as configurações do nginx usadas ao fazer o build
+Proxy reverso escutando a porta 8080. O arquivo nginx.conf contém as configurações do nginx usadas ao fazer o build
 
 ## Uso
 
